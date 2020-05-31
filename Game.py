@@ -1,5 +1,5 @@
 import time
-from DesktopFinal import *
+from Desktop import *
 import sys
 from pynput import keyboard
 import resources
@@ -284,7 +284,7 @@ class Game:
         self.listener.stop()
         # save history to xml file
         xmlData = ET.tostring(self.xml)
-        xmlFile = open(f"history/snake_{datetime.now().strftime('%m%d_%H%M%S')}", "w")
+        xmlFile = open(f"history/snake_{datetime.now().strftime('%m%d_%H%M%S')}.xml", "w")
         xmlFile.write(xmlData.decode('utf-8'))
 
     def runAI(self):
