@@ -1,0 +1,7 @@
+{
+  "names": ["Tomasz", "Radoslaw"],
+  "ip":"",
+  "port":"33000",
+  "history": "snake.xml",
+  "aimodel": "history/snakeAI.h5"
+}
